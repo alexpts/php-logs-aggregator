@@ -6,7 +6,7 @@
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/alexpts/php-logs-aggregator/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/alexpts/php-logs-aggregator/?branch=master)
 
 
-Middleware manager compatible with the [PSR-7](https://www.php-fig.org/psr/psr-7/) and [PSR-15](https://www.php-fig.org/psr/psr-15/)
+Container for PSR-3 logs
 
 ## Installation
 
