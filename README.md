@@ -11,3 +11,23 @@ Container for PSR-3 logs
 ## Installation
 
 ```$ composer require alexpts/php-logs-aggregator```
+
+
+### Example
+
+```php
+<?php
+use PTS\LogsAggregator\LogsAggregator;
+
+$logger = new LogsAggregator;
+
+$logger->emergency('Message 1');
+$logger->alert('DB not avaible', ['node' => '127.0.0.1']);
+$logger->critical('Permission denied', ['userId' => 1, 'uri' => '/admin/settings']);
+$logger->error('Some error');
+...
+
+$logs = $logger->getRecords();
+$logger->reset();
+
+```
